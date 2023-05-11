@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/upload.css">
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <title>Login & Register</title>
+</head>
+<body>
+
+       
+ 
+    <!----login and registration forms-->
+    <div class="tabContainer">
+        <div class="btnContainer">
+            <button onclick="showPanel(0, '#0A2A5B')"> Login</button>
+            <button onclick="showPanel(1, '#0A2A5B')">Create Account</button>
+        </div>
+
+    <div class="tabPanel">
+        <h1>Login Form</h1>
+        <form id="loginForm" action="/login" method="POST">
+            
+            <input type="email" name="email" id="" placeholder="Email">
+            <input type="text" name="password" id="" placeholder="Password">
+           <a href=""> <input type="submit" name="submit" value="Log In"> </a>
+        </form>
+        <div class="imageHolder">
+            <img src="/images/search.png" class="searchImages">
+        </div>
+    </div>
+
+    <div class="tabPanel">
+        <h1>Registration Form</h1> 
+        <form id="registrationForm" action="/users/register" method="POST">
+         <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" id="" placeholder="Email">
+        <input type="text" name="password" id="" placeholder="Password">
+        <input type="text" name="password" id="" placeholder="Confirm Password">
+        <input type="submit" name="submit" value="Register">
+    </form>
+    <div class="imageHolder">
+        <img src="/images/search.png" class="searchImages">
+    </div>
+</div>
+</div>
+
+
+</body>
+<script src="/js/signup.js"></script>
+
+</html>
